@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="Logo.png" type="image/x-icon">
+        <title>NextEdge Technologies</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Cookie&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rye&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Cookie&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Rye&display=swap" rel="stylesheet">
+    </head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top px-3">
+        <div class="container-fluid py-2">
+          <a class="navbar-brand" href="Index.html"><img src="Logo.png" alt="Logo" class="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- offcanvas -->
+
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <a class="navbar-brand" href="Index.html"><img src="Logo.png" alt="Logo" class="logo"></a>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-evenly flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active underline" aria-current="page" href="Index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link underline" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link underline" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle underline" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    More Pages
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item underline" href="services.html">Services</a></li>
+                    <li><a class="dropdown-item underline" href="career.html">Career</a></li>
+                    <!-- <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <!-- About Us -->
+
+    <div class="container-fluid about-container pb-5">
+        <div class="row pb-5 px-5 pt-2 d-flex justify-content-center align-items-center row-gap-3">
+            <div class="col-md-6">
+                <h1 class="main-heading">Empowering Businesses with Cutting-Edge Technology Solutions</h1>
+                <p class="main-subheading">Innovating the future with tailored IT solutions designed to transform businesses, optimize performance, and deliver exceptional results</p>
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+            </div>
+            <div class="col-md-6">
+                <img src="about-images/main.jpg" alt="main image" class="w-100 h-100 about-main-img">
+            </div>
+        </div>
+        <div class="text-center d-flex justify-content-center align-items-end gap-3">
+            <img src="down-arrow.png" alt="arrow" class="arrow">
+            <span class="d-flex justify-content-center align-items-end scroll">Scroll</span>
+            <img src="down-arrow.png" alt="arrow" class="arrow">
+        </div>
+    </div>
+
+    <!-- figures -->
+
+    <div class="container-fluid bg-white sticky-container about-figures" style="background-image: none; height: 100vh;">
+        <div class="row row-gap-5" style="padding: 0em 2em 4em 2em; height: 100%;">
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <h2 class="main-heading text-center">Impressive <span style="color: rgb(67, 184, 184); text-shadow: 2px 2px black; text-wrap-style:balance;">milestones</span> and key figures</h1>
+            </div>
+            <div class="col-md-6 figures">
+                <div class="container text-center h-75 d-flex justify-content-center align-items-center">
+                    <div class="row row-cols-2 gap-0 bg-light p-4" style="border-radius: 1em;">
+                      <div class="col d-grid justify-content-start align-items-center" style="border-style: solid; border-color: rgba(157, 157, 157, 0.136); border-left: 0; border-top: 0;">
+                        <h3 class="d-flex justify-content-start">98%</h3>
+                        <p>Customer Satisfaction Rate</p>
+                      </div>
+                      <div class="col d-grid justify-content-start align-items-center" style="border-style: solid; border-color: rgba(157, 157, 157, 0.136); border-left: 0; border-top: 0; border-right: 0;">
+                        <h3 class="d-flex justify-content-start">200+</h3>
+                        <p>talented professionals</p>
+                      </div>
+                      <div class="col d-grid justify-content-start align-items-center" style="border-style: solid; border-color: rgba(157, 157, 157, 0.136); border-left: 0; border-top: 0; border-bottom: 0;">
+                        <h3 class="d-flex justify-content-start">10+</h3>
+                        <p>industry awards & recognitions</p>
+                      </div>
+                      <div class="col d-grid justify-content-start align-items-center" style="border-style: solid; border-color: rgba(157, 157, 157, 0.136); border:0;">
+                        <h3 class="d-flex justify-content-start">20+</h3>
+                        <p>Years of  Experience</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- vision -->
+
+    <div class="container-fluid text-center vision-container bg-white pt-1 d-grid justify-content-center align-items-center">
+        <div class="row row-gap-3 py-5">
+            <div class="col-md-4">
+                <img src="about-images/vision.jpg" alt="vision image" class="w-50 rounded-end rounded-4 about-left-img">
+            </div>
+            <div class="col-md-4">
+                <h1 class="main-heading">Our Vision</h1>
+                <p class="">Our vision is to be a global leader in technology solutions, setting new benchmarks in innovation, reliability, and sustainability. We aim to create a future where businesses and individuals can seamlessly integrate technology into their lives, unlocking new possibilities and driving progress. With a relentless focus on quality and collaboration, we aspire to make a meaningful impact on the world through technology.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="about-images/vision2.jpg" alt="vision image" class="w-50 rounded-end rounded-4 mission about-right-img">
+
+            </div>
+            <div class="text-center d-flex justify-content-center align-items-end gap-3">
+                <img src="down-arrow.png" alt="arrow" class="arrow">
+                <span class="d-flex justify-content-center align-items-end scroll">Scroll</span>
+                <img src="down-arrow.png" alt="arrow" class="arrow">
+            </div>
+        </div>
+    </div>
+
+    <!-- Mission -->
+    
+    <div class="container-fluid text-center vision-container bg-white pt-1 d-grid justify-content-center align-items-center" style="height: 100vh;">
+        <div class="row row-gap-3 py-5">
+            <div class="col-md-4">
+                <img src="about-images/mission.jpg" alt="vision image" class="w-50 rounded-end rounded-4 about-left-img">
+            </div>
+            <div class="col-md-4">
+                <h1 class="main-heading">Our Mission</h1>
+                <p class="">Our mission is to enable businesses of all sizes to achieve their full potential through innovative technology solutions. We strive to deliver exceptional value by combining expertise, creativity, and a customer-centric approach. At NextEdge Technologies, we are dedicated to transforming challenges into opportunities, helping our clients stay ahead in a rapidly evolving world.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="about-images/mision2.jpg" alt="vision image" class="w-50 rounded-end rounded-4 mission about-right-img">
+            </div>
+            <div class="text-center d-flex justify-content-center align-items-end gap-3">
+                <img src="down-arrow.png" alt="arrow" class="arrow">
+                <span class="d-flex justify-content-center align-items-end scroll">Scroll</span>
+                <img src="down-arrow.png" alt="arrow" class="arrow">
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid footer-container" id="footer">
+        <div class="row d-flex justify-content-evenly mb-5 subscribe">
+            <div class="col-12 d-flex bg-light footer-social-div">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 d-flex justify-content-center align-items-center py-5 rounded">
+                            <h3 class="main-heading fs-3 underline pb-2" style="background-image: linear-gradient(rgba(30, 181, 227, 0.411), rgba(173, 255, 252, 0.668));">Connect to Our Social Plateform</h3>
+                        </div>
+                        <div class="col-md-6 d-flex justify-content-evenly align-items-center py-5 rounded">
+                            <a href="" class="pb-2 underline" style="background-image: linear-gradient(rgba(30, 181, 227, 0.411), rgba(173, 255, 252, 0.668));"><i class="fa-brands fa-beat fa-meta fa-xl"></i></a>
+                            <a href="" class="pb-1 underline" style="background-image: linear-gradient(rgba(30, 181, 227, 0.411), rgba(173, 255, 252, 0.668));"><i class="fa-brands fa-beat fa-instagram fa-xl py-3"></i></a>
+                            <a href="" class="pb-2 underline" style="background-image: linear-gradient(rgba(30, 181, 227, 0.411), rgba(173, 255, 252, 0.668));"><i class="fa-brands fa-beat fa-linkedin fa-xl"></i></a>
+                            <a href="" class="pb-2 underline" style="background-image: linear-gradient(rgba(30, 181, 227, 0.411), rgba(173, 255, 252, 0.668));"><i class="fa-brands fa-beat fa-telegram fa-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-lg-6 subscribe">
+                <h1 class="main-heading mb-4">Subscribe our newsletter for latest software updates !</h1>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 subscribe-input" type="email" placeholder="xyz@gmail.com">
+                    <button class="btn btn-outline-success" type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="col-lg-6">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-6 text-start">
+                            <p class="d-grid justify-content-center footer-page-heading-1">Main Pages</p>
+                            <ul class="page-link-item d-grid justify-content-center">
+                                <li><a href="about.html" class="footer-anchor-tag">About US</a></li>
+                                <li><a href="contact.html" class="footer-anchor-tag">Contact</a></li>
+                                <li><a href="career.html" class="footer-anchor-tag">Career</a></li>
+                                <li><a href="services.html" class="footer-anchor-tag">Services</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <p class="d-grid justify-content-center footer-page-heading-2">
+                                More Pages
+                                <span class="footer-page-heading-underline"></span>
+                            </p>
+                            <ul class="page-link-item d-grid justify-content-center">
+                                <li><a href="" class="footer-anchor-tag">Pricing</a></li>
+                                <li><a href="" class="footer-anchor-tag">features</a></li>
+                                <li><a href="" class="footer-anchor-tag">Integration</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bg-light mt-5">
+            <div class="col d-flex justify-content-center align-items-center pt-2">
+                <p class="d-flex justify-content-center align-items-center gap-2 main-subheading">Created by<a href="https://github.com/Utkarsh1228"> Utkarsh Poswal</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ee30d080cb.js" crossorigin="anonymous"></script>
+</body>
+</html>

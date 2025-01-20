@@ -1,0 +1,783 @@
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.logo{
+    width: 10em;
+    animation: scaleUp 2s ease-in-out forwards;
+}
+
+.sticky-container{
+    background-image: linear-gradient(rgba(30, 181, 227, 0.411), rgba(173, 255, 252, 0.668));
+    position: sticky;
+    top: 20.8%;
+}
+
+.underline{
+    background-image: linear-gradient(white,black);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    transition: background-size 0.5s ease-in;
+}
+.underline:hover{
+    background-size: 90% 3px;
+}
+
+.navbar{
+    background-image: linear-gradient(rgba(173, 255, 252, 0.668), rgba(30, 181, 227, 0.411));
+    background-color: white;
+}
+
+.nav-link{
+    font-weight: 500;
+    font-family: cursive;
+    color: #6c6c6c;
+    text-shadow: 1px 1px rgba(83, 132, 255, 0.505);
+    position: relative;
+    animation: navbarAnimate 2s ease-in-out forwards;
+}
+
+.navbar form{
+    animation: scaleUp 2s ease-in-out forwards;
+}
+
+@keyframes scaleUp {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes navbarAnimate {
+    from{
+        top:-7em;
+    }
+    to{
+        top:0em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .offcanvas{
+        background-image: linear-gradient(rgba(173, 255, 252, 0.668), rgba(30, 181, 227, 0.411));
+    }
+    
+}
+
+
+.main-heading{
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    text-shadow: 2px 2px rgb(188, 188, 188);
+    position: relative;
+    animation: leftEntry 2s ease-in-out forwards;
+}
+
+@keyframes leftEntry {
+    from{
+        left: -50em;
+    }
+    to{
+        left:0;
+    }
+}
+
+@keyframes rightEntry {
+    from{
+        right: -50em;
+    }
+    to{
+        right:0;
+    }
+}
+
+.main-subheading{
+    font-family: "Roboto Flex", serif;
+    font-family: 200;
+    font-size: 1.3em;
+    animation: RotateAndScaleUp 2s ease-in-out forwards;
+}
+
+@keyframes RotateAndScaleUp {
+    from{
+        transform: rotate(0deg);
+        opacity: 0%;
+    }
+    to{
+        transform: rotate(360deg);
+        opacity: 100%;
+    }
+}
+
+.main-img-div{
+    padding-top: 2em;
+}
+
+.main-img{
+    border-radius: 3em;
+    box-shadow: 5px 5px 20px rgba(11, 11, 11, 0.358);
+    position: relative;
+    animation: rightEntry 2s ease-in-out forwards;
+}
+
+.main-img:hover{
+    transition: 1s ease;
+    transform: scale(0.95);
+    box-shadow: 5px 10px 50px rgb(255, 255, 255);
+}
+
+.scroll{
+    font-size: 1.1em;
+    font-family: cursive;
+}
+
+.arrow{
+    width: 1.3em;
+    position: relative;
+    animation: arrowAnimation 1s ease-in infinite;
+}
+
+@keyframes arrowAnimation {
+    from{
+        transform: translateY(0em);
+    }
+    to{
+        transform: translateY(1em);
+    }
+}
+
+
+/* companies */
+
+.companies-container{
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 20.8%;
+    height: 590px;
+    padding: 4em 2em 2em 2em;
+    animation: scaleUp 2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.companies-section-heading{
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    text-shadow: 2px 2px rgb(188, 188, 188);
+    margin-bottom: 3em;
+    text-align: center;
+    animation: ServiceAnimate3 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+/* .companies-section-subheading{
+    font-family: "Roboto Flex", serif;
+    font-family: 200;
+    font-size: 1.2em;
+} */
+
+.card-row{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    left: 0;
+    animation: ServiceAnimate3 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0 cover 20%;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    padding: 1em 0em;
+}
+
+.google{
+    position: relative;
+    animation: googleAnimate 2s infinite ease-in-out;
+}
+
+@media screen and (min-width: 1200px) {
+    @keyframes googleAnimate {
+        0%{
+            transform: translateY(0em);
+        }
+        25%{
+            transform: translateY(-7em);
+            left: 0%;
+        }
+        50%{
+            left: 16.2em;
+            transform: translateY(-7em);
+        }
+        75%{
+            left: 16.2em;
+            transform: translateX(0em);
+        }
+        100%{
+            transform: translateY(0em);
+            transform: translateX(0em);
+        }
+    }
+    
+}
+
+.meta{
+    position: relative;
+    animation: metaAnimate 2s infinite ease-in-out;
+}
+
+@media screen and (min-width: 1200px) {
+    @keyframes metaAnimate {
+        0%{
+            transform: translateY(0em);
+            /* transform: translateX(0em); */
+        }
+        25%{
+            transform: translateY(7em);
+            left: 0%;
+        }
+        50%{
+            left: -16.2em;
+            transform: translateY(7em);
+            /* transform: translateX(17em); */
+        }
+        75%{
+            left: -16.2em;
+            transform: translateX(0em);
+        }
+        100%{
+            transform: translateY(0em);
+            transform: translateX(0em);
+        }
+    }
+    
+}
+
+
+.netflix{
+    position: relative;
+    animation: netflixAnimate 2s infinite ease-in-out;
+}
+
+@media screen and (min-width: 1200px) {
+    @keyframes netflixAnimate {
+        0%{
+            transform: translateY(0em);
+            /* transform: translateX(0em); */
+        }
+        25%{
+            transform: translateY(-7em);
+            left: 0%;
+        }
+        50%{
+            left: 16.2em;
+            transform: translateY(-7em);
+            /* transform: translateX(17em); */
+        }
+        75%{
+            left: 16.2em;
+            transform: translateX(0em);
+        }
+        100%{
+            transform: translateY(0em);
+            transform: translateX(0em);
+        }
+    }
+    
+}
+
+
+.amazon{
+    position: relative;
+    animation: amazonAnimate 2s infinite ease-in-out;
+}
+
+@media screen and (min-width: 1200px) {
+    @keyframes amazonAnimate {
+        0%{
+            transform: translateY(0em);
+            /* transform: translateX(0em); */
+        }
+        25%{
+            transform: translateY(7em);
+            left: 0%;
+        }
+        50%{
+            left: -16.2em;
+            transform: translateY(7em);
+            /* transform: translateX(17em); */
+        }
+        75%{
+            left: -16.2em;
+            transform: translateX(0em);
+        }
+        100%{
+            transform: translateY(0em);
+            transform: translateX(0em);
+        }
+    }
+    
+}
+
+
+
+.apple{
+    position: relative;
+    animation: appleAnimate 2s infinite ease-in-out;
+}
+
+@media screen and (min-width: 1200px) {
+    @keyframes appleAnimate {
+        0%{
+            transform: translateY(0em);
+            /* transform: translateX(0em); */
+        }
+        25%{
+            transform: translateY(-7em);
+            left: 0%;
+        }
+        50%{
+            left: 16.2em;
+            transform: translateY(-7em);
+            /* transform: translateX(17em); */
+        }
+        75%{
+            left: 16.2em;
+            transform: translateX(0em);
+        }
+        100%{
+            transform: translateY(0em);
+            transform: translateX(0em);
+        }
+    }
+    
+}
+
+
+.tesla{
+    position: relative;
+    animation: teslaAnimate 2s infinite ease-in-out;
+}
+
+@media screen and (min-width: 1200px) {
+    @keyframes teslaAnimate {
+        0%{
+            transform: translateY(0em);
+            /* transform: translateX(0em); */
+        }
+        25%{
+            transform: translateY(7em);
+            left: 0%;
+        }
+        50%{
+            left: -16.2em;
+            transform: translateY(7em);
+            /* transform: translateX(17em); */
+        }
+        75%{
+            left: -16.2em;
+            transform: translateX(0em);
+        }
+        100%{
+            transform: translateY(0em);
+            transform: translateX(0em);
+        }
+    }
+    
+}
+
+/* services */
+
+.services-container{
+    background-image: linear-gradient(rgba(30, 181, 227, 0.411), rgba(173, 255, 252, 0.668));
+    position: relative;
+    top: 20.8%;
+    height: 100%;
+    padding: 0em 2em 2em 2em;
+}
+
+.service-heading{
+    background-image: linear-gradient(white,black);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    transition: background-size 0.5s ease-in;
+}
+
+.service-heading:hover{
+    background-size: 20% 3px;
+}
+
+.card-img-top{
+    width: 30%;
+}
+
+.hidden-element{
+    display: none;
+}
+
+.parent-element{
+    border-radius: 2em;
+}
+
+.parent-element:hover
+.hidden-element{
+    display: grid;
+}
+
+.parent-element:hover
+.card-img{
+    filter: brightness(20%);
+}
+
+.card-row{
+    margin-top: 6em;
+}
+
+.card-img{
+    border-radius: 2em;
+}
+
+.service-animation-1{
+    position: relative;
+    animation: scaleUp 2s ease;
+    
+}
+
+.service-animation-2{
+    position: relative;
+    animation: scaleUp 3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.service-animation-3{
+    position: relative;
+    animation: scaleUp 3s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+
+@keyframes ServiceAnimate {
+    from{
+        left:-250%;
+    }
+    to{
+        left:0%;
+    }
+}
+
+/* Customer */
+
+.customer-container{
+    background-image: linear-gradient(rgba(30, 181, 227, 0.411), rgba(173, 255, 252, 0.668));
+    height: 100%;
+    padding: 5em 0em 6.2em 0em;
+    position: sticky;
+    top: 20.8%;    
+    animation: scaleUp 2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.customer-heading{
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    text-shadow: 2px 2px rgb(188, 188, 188);
+    margin-bottom: 0em;
+    text-align: center;    
+    animation: scaleUp 2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+
+.client-img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 2em;
+    border-style: groove;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.477);
+}
+
+.client-img:hover{
+    position: relative;
+}
+
+
+/* footer */
+
+.footer-container{
+    background-color: rgb(255, 255, 255);
+    padding: 5em 0em 0em 0em;
+    position: absolute;
+    animation: scaleUp 2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.footer-social-div{
+    border-radius: 2em;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.578) ;
+    transition: box-shadow 0.5s ease-in;
+}
+
+.footer-social-div:hover{
+    box-shadow: 5px 10px 15px rgba(255, 255, 255, 0.578) ;
+}
+
+.footer-form{
+    animation: scaleUp 2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0 cover 10%;
+}
+
+.subscribe{
+    padding: 0em 8em;
+}
+
+.subscribe-input{
+    border-style: groove;
+}
+
+.page-link-item{
+    list-style-type: none;
+    row-gap: 1em;
+    animation: scaleUp 2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0 cover 15%;
+}
+
+.footer-page-heading-1{
+    font-size: 1.1em;
+    background-image: linear-gradient(black, white);
+    background-size: 0px 3px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    text-decoration: none;
+    transition: background-size 0.5s ease-in;
+    font-family: "Poppins", serif;
+    /* font-weight: 600; */
+    font-style: normal;
+}
+
+.footer-page-heading-2{
+    font-size: 1.1em;
+    background-image: linear-gradient(black, white);
+    background-size: 0px 3px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    text-decoration: none;
+    transition: background-size 0.5s ease-in;
+    font-family: "Poppins", serif;
+    /* font-weight: 600; */
+    font-style: normal;
+}
+
+.footer-page-heading-1:hover{
+    background-size: 92px 3px;
+    background-image: linear-gradient(rgb(28, 124, 139), white);
+    cursor: none;
+}
+
+
+.footer-page-heading-2:hover{
+    background-size: 92px 3px;
+    background-image: linear-gradient(rgb(28, 124, 139), white);
+    cursor: none;
+}
+
+.footer-anchor-tag{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.51);
+}
+
+.footer-anchor-tag:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+@media only screen and (max-width: 968px) {
+    .subscribe{
+        padding: 0em 2em;
+        margin-bottom: 4em;
+    }
+}
+
+
+
+/* about */
+
+.about-container{
+    position: sticky;
+    top: 20.8%;
+    background-image: linear-gradient(rgba(30, 181, 227, 0.411), rgba(173, 255, 252, 0.668));
+    height:100vh;
+}
+
+.btn{
+    animation: scaleUp 2s ease-in-out forwards;
+}
+
+.about-figures{
+    animation: scaleUp 2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+}
+
+.about-main-img{
+    border-right:0;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 4px;
+    border-style: groove;
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.552);
+    border-radius: 2em;
+    position: relative;
+    animation: rightEntry 2s ease-in;
+}
+
+.about-main-img:hover{
+    transition: transform 0.7s ease-in-out;
+    transform:scale(0.9);
+    box-shadow: 5px 10px 25px rgba(255, 255, 255, 0.608);
+}
+
+
+.vision-container{
+    position: sticky;
+    top: 20.8%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(30, 181, 227, 0.411), rgba(173, 255, 252, 0.668));
+    /* height:100vh; */
+    animation: scaleUp 2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+}
+
+.figures{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: scaleUp 2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+}
+
+@media  only screen and (max-width: 768px) {
+    .figures{
+        align-items: start;
+    }
+    .mission{
+        display: none;
+    }
+}
+
+.about-left-img{
+    position: relative;
+    animation: leftEntry 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0 cover 20%;
+}
+
+.about-right-img{
+    position: relative;
+    animation: rightEntry 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0 cover 20%;
+}
+
+
+/* contact */
+
+.contact-container{
+    position: sticky;
+    top: 0%;
+    background-image: linear-gradient(rgba(30, 181, 227, 0.411), rgba(173, 255, 252, 0.668));
+    height:100vh;
+}
+
+.contact-form{
+    width: 75%;
+}
+
+.contact-map{
+    display: block;
+}
+
+.map{
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .contact-form{
+        width: 85%;
+    }
+}
+
+.contact-footer{
+    background-image: none;
+}
+
+@media only screen and (max-width: 798px) {
+    .map{
+        display: block;
+        animation: scaleUp 2s ease-in-out forwards;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+    .contact-map{
+        display: none;
+    }
+    .contact-footer{
+        background-image: linear-gradient(rgba(30, 181, 227, 0.411), rgba(173, 255, 252, 0.668));
+    }
+}
+
+@media only screen and (max-width: 976px) {
+    .contact-form{
+        width: 100%;
+    }
+}
+
+
+/* Career */
+
+.career-container{
+    background-image: linear-gradient(rgba(30, 181, 227, 0.411), rgba(173, 255, 252, 0.668));
+}
+
+.career-nav{
+    font-weight: 500;
+    cursor: pointer;
+    padding-bottom: 1em;
+    z-index: 1;
+    background-image: linear-gradient(rgba(37, 36, 36, 0.059), rgba(0, 0, 0, 0.053));
+    background-size: 100% 2px;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
+
+.job-card{
+    animation: scaleUp 2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0 cover 20%;
+}
+
+.straight-line{
+    padding-bottom: 0.5em;
+    background-image: linear-gradient(rgba(37, 36, 36, 0.059), rgba(0, 0, 0, 0.053));
+    background-size: 100% 2px;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
